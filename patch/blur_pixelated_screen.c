@@ -31,7 +31,8 @@ create_lock_image(Display *dpy)
 
 	#ifdef BLUR
 	/* Blur function */
-	imlib_image_blur(blurRadius);
+    for (int i = 0; i < blurPasses; ++i)
+        imlib_image_blur(blurRadius);
 	#endif // BLUR
 
 	#ifdef PIXELATION

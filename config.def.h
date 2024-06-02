@@ -7,7 +7,7 @@ static const char *colorname[NUMCOLS] = {
 	[BACKGROUND] =  "#2d2d2d", /* after initialization */
 	#endif // DWM_LOGO_PATCH
 	[INIT] =   "black",     /* after initialization */
-	[INPUT] =  "#005577",   /* during input */
+	[INPUT] =  "black",   /* during input */
 	[FAILED] = "#CC3333",   /* wrong password */
 	#if CAPSCOLOR_PATCH
 	[CAPS] =   "red",       /* CapsLock on */
@@ -38,7 +38,7 @@ static const char * background_image = "";
 
 #if DWM_LOGO_PATCH
 /* insert grid pattern with scale 1:1, the size can be changed with logosize */
-static const int logosize = 75;
+static const int logosize = 20;
 static const int logow = 12;   /* grid width and height for right center alignment*/
 static const int logoh = 6;
 
@@ -124,6 +124,7 @@ static const secretpass scom[] = {
 #define BLUR
 /* Set blur radius */
 static const int blurRadius = 5;
+static const int blurPasses = 3;
 /* Enable Pixelation */
 //#define PIXELATION
 /* Set pixelation radius */
@@ -137,7 +138,7 @@ static const int controlkeyclear = 0;
 
 #if DPMS_PATCH
 /* time in seconds before the monitor shuts down */
-static const int monitortime = 5;
+static const int monitortime = 10;
 #endif // DPMS_PATCH
 
 #if KEYPRESS_FEEDBACK_PATCH

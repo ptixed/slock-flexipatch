@@ -35,7 +35,7 @@
  * The background image patch takes precedence over this patch.
  * https://tools.suckless.org/slock/patches/blur-pixelated-screen/
  */
-#define BLUR_PIXELATED_SCREEN_PATCH 0
+#define BLUR_PIXELATED_SCREEN_PATCH 1
 
 /* This patch introduces an additional color to indicate the state of Caps Lock.
  * https://tools.suckless.org/slock/patches/capscolor/
@@ -72,12 +72,12 @@
  * and the password can be entered then.
  * https://tools.suckless.org/slock/patches/dpms/
  */
-#define DPMS_PATCH 0
+#define DPMS_PATCH 1
 
 /* This patch draws the dwm logo which changes color based on the state.
  * https://tools.suckless.org/slock/patches/dwmlogo/
  */
-#define DWM_LOGO_PATCH 0
+#define DWM_LOGO_PATCH 1
 
 /* This patch allows for a command to be run after a specified number of incorrect attempts.
  * https://tools.suckless.org/slock/patches/failure-command/
@@ -94,7 +94,7 @@
  * to be adjusted or to skip to the next song without having to unlock the screen first.
  * https://tools.suckless.org/slock/patches/mediakeys/
  */
-#define MEDIAKEYS_PATCH 0
+#define MEDIAKEYS_PATCH 1
 
 /* This patch lets you add a message to your lock screen. You can place a default message
  * in config.h and you can also pass a message with the -m command line option.
