@@ -6,8 +6,8 @@ static const char *colorname[NUMCOLS] = {
 	#if DWM_LOGO_PATCH && !BLUR_PIXELATED_SCREEN_PATCH
 	[BACKGROUND] =  "#2d2d2d", /* after initialization */
 	#endif // DWM_LOGO_PATCH
-	[INIT] =   "black",     /* after initialization */
-	[INPUT] =  "black",   /* during input */
+	[INIT] =   "#111111",     /* after initialization */
+	[INPUT] =  "#111111",   /* during input */
 	[FAILED] = "#CC3333",   /* wrong password */
 	#if CAPSCOLOR_PATCH
 	[CAPS] =   "red",       /* CapsLock on */
@@ -39,20 +39,19 @@ static const char * background_image = "";
 #if DWM_LOGO_PATCH
 /* insert grid pattern with scale 1:1, the size can be changed with logosize */
 static const int logosize = 20;
-static const int logow = 12;   /* grid width and height for right center alignment*/
-static const int logoh = 6;
+static const int logow = 7;   /* grid width and height for right center alignment*/
+static const int logoh = 5;
 
 static XRectangle rectangles[] = {
-   /* x    y   w   h */
-   { 0,    3,  1,  3 },
-   { 1,    3,  2,  1 },
-   { 0,    5,  8,  1 },
-   { 3,    0,  1,  5 },
-   { 5,    3,  1,  2 },
-   { 7,    3,  1,  2 },
-   { 8,    3,  4,  1 },
-   { 9,    4,  1,  2 },
-   { 11,   4,  1,  2 },
+  /* x  y  w  h */
+   { 1, 0, 1, 1 },
+   { 0, 2, 2, 1 },
+   { 1, 3, 1, 1 },
+   { 0, 4, 3, 1 },
+   { 4, 0, 2, 1 },
+   { 5, 2, 1, 1 },
+   { 4, 4, 2, 1 },
+   { 6, 0, 1, 5 }
 };
 #endif // DWM_LOGO_PATCH
 

@@ -8,6 +8,12 @@ OBJ = ${SRC:.c=.o}
 
 all: slock
 
+test: all
+	sudo cp slock ~/.local/bin/ 
+	sudo chown root:root ~/.local/bin/slock
+	sudo chmod +s,a+rx ~/.local/bin/slock
+	slock
+
 .c.o:
 	${CC} -c ${CFLAGS} $<
 
